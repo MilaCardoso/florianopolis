@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Homepage</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Kaushan+Script&display=swap" rel="stylesheet">
+    <link rel="jssheet" href="js/slider.css">
+    <link rel="stylesheet" href="styles/header.css">
+
+    <script>
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            if (n > slides.length) {slideIndex = 1;}
+            if (n < 1) {slideIndex = slides.length;}
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex-1].style.display = "block";
+            dots[slideIndex-1].className += " active";}
+    </script>
+
+</head>
+<body>
+    <div class="header">
+        <nav>
+            <h1>Florianópolis</h1>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">History & Gallery</a></li>
+                <li><a href="#">Attractions & Guide</a></li>
+                <li><a href="#">Contacts</a></li>
+                <li><a href="#">Events</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="slideshow-container">
+        <div class="mySlides">
+            <img src="images/slider/bridge.jpg" alt="bridge">
+        </div>
+        <div class="mySlides">
+            <img src="images/slider/bridge2.jpg" alt="groomer">
+        </div>
+        <div class="mySlides">
+            <img src="images/backgrounds/diet.jpeg" alt="diet">
+        </div>
+        <div class="mySlides">
+            <img src="images/backgrounds/product.jpg" alt="product">
+        </div>
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <div class="dot-container">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+    </div>
+
+    <script>
+     var slideIndex = 1;
+     showSlides(slideIndex);</script>
+
+</body>
+</html>
