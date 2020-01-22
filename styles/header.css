@@ -1,14 +1,27 @@
+/* Header */
 body {
     margin: 0;
 }
 
-nav h1 {
-    font-family: 'Kaushan Script', cursive;
-    color: white;
+header {
+  display: flex;
 }
 
-.image > img {
-    width: 100%;
+nav spam {
+    font-family: 'Kaushan Script', cursive;
+    color: white;
+    font-size: 120px;
+    animation-name: changeColours;
+    animation-duration: 2s;
+}
+
+@keyframes changeColours {
+   0%  {color: white;}
+  20%  {color: rgb(15, 235, 52);}
+  40%  {color: #fa35bf;}
+  60%  {color: yellow;}
+  80%  {color: red;}
+  100% {color: #35e3fa;}
 }
 
 .mySlides img {
@@ -16,116 +29,75 @@ nav h1 {
     height: 100%;
 }
 
-/* Slideshow container */
+ nav {
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+}
+
+nav.scrolled {
+  background: rgba(17, 17, 17, 0.9);
+}
+
+nav ul {
+  float: right;
+  list-style: none;
+  padding: 10px;
+  margin: 0;
+  margin-right: 25px;
+}
+
+nav li {
+  float: left;
+}
+
+nav a {
+  font-size: 0.9em;
+  color: white;
+  text-decoration: none;
+  margin: 5px 0 0 20px;
+  display: block;
+}
+
+nav a:hover {
+  color: gray;
+}
+
+/* Slides */
 .slideshow-container {
     position: relative;
-    background: #cbcbcb;
-  }
-  
-  /* Slides */
-  .mySlides {
-    position: relative;
-    display: none;
-    text-align: center;
-    font-size: 90px;
-    color: white;
-    
-  }
+}
 
-  .slide-text {
-    background: rgba(0,0,0,0.4);
-    padding: 0px 15px;
-    white-space: nowrap;
-  }
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -30px;
+  padding: 16px;
+  color: #eee;
+  font-weight: bold;
+  font-size: 50px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  background-color: rgba(0,0,0,0.2);
+}
+  
+.next {
+  position: absolute;
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
 
-  .slide-main-text {
-    position: absolute;
-    top: 20%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+  color: white;
+}
 
-  .slide-products-text {
-    background: rgba(0,0,0,0.7);
-  }
+/* Footer */
 
-  /* Next & previous buttons */
-  .prev, .next {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    width: auto;
-    margin-top: -30px;
-    padding: 16px;
-    color: #eee;
-    font-weight: bold;
-    font-size: 50px;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
-    background-color: rgba(0,0,0,0.2);
-  }
-  
-  /* Position the "next button" to the right */
-  .next {
-    position: absolute;
-    right: 0;
-    border-radius: 3px 0 0 3px;
-  }
-  
-  /* On hover, add a black background color with a little bit see-through */
-  .prev:hover, .next:hover {
-    background-color: rgba(0,0,0,0.8);
-    color: white;
-  }
-  
-  /* The dot/bullet/indicator container */
-  .dot-container {
-    text-align: center;
-    padding: 20px;
-  }
-  
-  /* The dots/bullets/indicators */
-  .dot {
-    cursor: pointer;
-    height: 15px;
-    width: 15px;
-    margin: 0 2px;
-    background-color: #f5a1058a;
-    border-radius: 50%;
-    display: inline-block;
-    transition: background-color 0.6s ease;
-  }
-  
-  /* Add a background color to the active dot/circle */
-  .active, .dot:hover {
-    background-color: lightsteelblue;
-  }
+.footer canvas {
+  margin: 0;
+}
 
-  nav {
-    position: fixed;
-    width: 100%;
-    z-index: 10;
-  }
-  nav.scrolled {
-    background: rgba(17, 17, 17, 0.9);
-  }
-  nav ul {
-    float: right;
-    list-style: none;
-    padding: 10px;
-    margin: 0;
-    margin-right: 25px;
-  }
-  nav li {
-    float: left;
-  }
-  nav a {
-    font-size: 0.9em;
-    color: white;
-    text-decoration: none;
-    margin: 5px 0 0 20px;
-    display: block;
-  }
-  nav a:hover {
-    color: gray;
-  }
+ 
