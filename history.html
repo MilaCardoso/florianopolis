@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Homepage</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="https://fonts.googleapis.com/css?family=Kaushan+Script&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/header.css">
+
+</head>
+<body>
+    <div class="header-hist">
+        <nav>
+            <spam>Florianópolis</spam>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="history.html">History & Gallery</a></li>
+                <li><a href="#">Attractions & Guide</a></li>
+                <li><a href="#">Contacts</a></li>
+                <li><a href="#">Events</a></li>
+            </ul>
+        </nav>
+    </div>
+
+
+    <video width="320" height="240" controls>
+        <source src="video/floripa.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+  
+  
+
+
+    <div class="footer">
+        <footer>
+            <canvas id="myCanvas" width="500" height="100"></canvas>
+            <script>
+    
+                var c = document.getElementById("myCanvas");
+                
+                var ctx = c.getContext("2d");
+                
+                
+                
+                // Create gradient
+                
+                var grd = ctx.createLinearGradient(0,0,200,0);
+                
+                grd.addColorStop(0,"#D5F3FE");
+                
+                grd.addColorStop(1,"#3C99DC");
+                
+                
+                
+                // Fill with gradient
+                
+                ctx.fillStyle = grd;
+                
+                ctx.fillRect(0,10,500,100);
+                
+                
+                
+                /* Text in canvas */
+                
+                var canvas = document.getElementById("myCanvas");
+                
+                var ctx=canvas.getContext("2d");
+                
+                ctx.font="30px Perpetua";
+                
+                ctx.fillStyle = "white";
+                
+                ctx.textAlign = "center";
+                
+                ctx.fillText("Make your stay a wonderful stay at Floripa", canvas.width/2, canvas.height/2);
+                
+            </script>
+        </footer>
+    </div>
+
+</body >
+</html>

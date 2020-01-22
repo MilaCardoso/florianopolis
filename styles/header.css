@@ -97,10 +97,20 @@ nav a:hover {
 }
 
 /* Footer */
-
 .footer canvas {
   margin: 0;
   margin-bottom: -6px;
+}
+
+/* History */
+.header-hist {
+  position: relative;
+  height: 400px;
+  color: #fff;
+  text-align: center;
+  background-image: src("images/slider/mercadoMunicipal.jpg");
+  background-repeat: no-repeat, repeat;
+  background-size: cover;
 }
 
 @media(max-width: 700px) {
@@ -136,3 +146,5 @@ nav a:hover {
   }
 
 }
+
+ 
