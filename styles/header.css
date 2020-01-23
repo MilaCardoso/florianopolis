@@ -8,6 +8,7 @@ header {
 }
 
 nav spam {
+<<<<<<< HEAD
     /*font-family: 'Kaushan Script', cursive;
     color: white;
     font-size: 120px;
@@ -24,12 +25,23 @@ nav spam {
 }
 
 /*@keyframes changeColours {
+=======
+    font-family: 'Kaushan Script', cursive;
+    color: white;
+    font-size: 120px;
+    animation-name: changeColours;
+    animation-duration: 2s;
+}
+
+@keyframes changeColours {
+>>>>>>> 65c1cdefa5cc793d844d4171a10ef7c54cbfdec2
    0%  {color: white;}
   20%  {color: rgb(15, 235, 52);}
   40%  {color: #fa35bf;}
   60%  {color: yellow;}
   80%  {color: red;}
   100% {color: #35e3fa;}
+<<<<<<< HEAD
 }*/
 
 @keyframes revealing {
@@ -41,6 +53,8 @@ nav spam {
 @keyframes moving-resizing {
   0%   {left:50%; top:50%; font-size: 230px;}
   100% {left:100px; top:40px; font-size: 50px;}
+=======
+>>>>>>> 65c1cdefa5cc793d844d4171a10ef7c54cbfdec2
 }
 
 .mySlides img {
@@ -127,7 +141,11 @@ nav a:hover {
   height: 400px;
   color: #fff;
   text-align: center;
+<<<<<<< HEAD
   background-image: url("../images/slider/mercadoMunicipal.jpg");
+=======
+  background-image: src("images/slider/mercadoMunicipal.jpg");
+>>>>>>> 65c1cdefa5cc793d844d4171a10ef7c54cbfdec2
   background-repeat: no-repeat, repeat;
   background-size: cover;
 }
