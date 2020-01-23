@@ -14,7 +14,6 @@
 <body>
     <div class="header">
         <nav>
-            <spam>Florianópolis</spam>
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="history.html">History & Gallery</a></li>
@@ -24,10 +23,10 @@
             </ul>
         </nav>
     </div>
-
     <div class="slideshow-container">
+        <spam class="main-title">Florianópolis</spam>
         <div class="mySlides">
-            <img src="images/slider/bridge.jpg" alt="bridge" >
+            <img src="images/slider/bridge.jpg" alt="bridge">
         </div>
         <div class="mySlides">
             <img src="images/slider/campecheIsland.jpg" alt="campeche">
@@ -92,7 +91,7 @@
             
             function handleResize() {
                 var c = document.getElementById("myCanvas");
-                c.width = window.innerWidth;
+                c.width = window.innerWidth-2;
                 var ctx = c.getContext("2d");
                 
                 // Create gradient
@@ -122,7 +121,10 @@
                 ctx.fillText("Make your stay a wonderful stay at Floripa", canvas.width/2, canvas.height/2);
             }
        
+            setTimeout(function() {document.documentElement.scrollTop = 0;}, 1);
+
             handleResize();
+
         </script>
     </footer>
 </div>

@@ -1,60 +1,15 @@
 /* Header */
 body {
     margin: 0;
+    overflow-x: hidden;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 header {
   display: flex;
-}
-
-nav spam {
-<<<<<<< HEAD
-    /*font-family: 'Kaushan Script', cursive;
-    color: white;
-    font-size: 120px;
-    animation-name: changeColours;
-    animation-duration: 2s;*/
-    color: white;
-    font-size: 150px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    opacity: 0;
-    animation: revealing 3s forwards, moving-resizing 2s 3s forwards;
-}
-
-/*@keyframes changeColours {
-=======
-    font-family: 'Kaushan Script', cursive;
-    color: white;
-    font-size: 120px;
-    animation-name: changeColours;
-    animation-duration: 2s;
-}
-
-@keyframes changeColours {
->>>>>>> 65c1cdefa5cc793d844d4171a10ef7c54cbfdec2
-   0%  {color: white;}
-  20%  {color: rgb(15, 235, 52);}
-  40%  {color: #fa35bf;}
-  60%  {color: yellow;}
-  80%  {color: red;}
-  100% {color: #35e3fa;}
-<<<<<<< HEAD
-}*/
-
-@keyframes revealing {
-  0%   {opacity:0; font-size: 100px;}
-  50%  {opacity:1; font-size: 250px;}
-  100% {opacity:1; font-size: 230px;}
-}
-
-@keyframes moving-resizing {
-  0%   {left:50%; top:50%; font-size: 230px;}
-  100% {left:100px; top:40px; font-size: 50px;}
-=======
->>>>>>> 65c1cdefa5cc793d844d4171a10ef7c54cbfdec2
 }
 
 .mySlides img {
@@ -103,6 +58,17 @@ nav a:hover {
     position: relative;
 }
 
+.main-title {
+  font-family: 'Kaushan Script', cursive;
+  color: white;
+  font-size: 120px;
+  animation: revealing 3s forwards, moving-resizing 2s 3s forwards;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 .prev, .next {
   cursor: pointer;
   position: absolute;
@@ -141,13 +107,20 @@ nav a:hover {
   height: 400px;
   color: #fff;
   text-align: center;
-<<<<<<< HEAD
   background-image: url("../images/slider/mercadoMunicipal.jpg");
-=======
-  background-image: src("images/slider/mercadoMunicipal.jpg");
->>>>>>> 65c1cdefa5cc793d844d4171a10ef7c54cbfdec2
   background-repeat: no-repeat, repeat;
   background-size: cover;
+}
+
+@keyframes revealing {
+  0%   {opacity:0; font-size: 100px;}
+  50% {opacity:1; font-size: 200px;}
+  100% {opacity:1; font-size: 190px;}
+}
+
+@keyframes moving-resizing {
+  0%   {left:50%; top:30%; font-size: 190px;}
+  100% {left:150px; top:5%; font-size: 50px;}
 }
 
 @media(max-width: 700px) {
