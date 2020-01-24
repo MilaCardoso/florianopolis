@@ -13,16 +13,24 @@ header {
 }
 
 .mySlides img {
-    width: 100%;
-    height: auto;
-    min-width: 900px;
-    margin-bottom: -4px;
+  width: 100%;
+  height: auto;
+  min-width: 900px;
+  margin-bottom: -4px;
 }
 
- nav {
+nav {
   position: fixed;
   width: 100%;
   z-index: 10;
+}
+
+nav spam {
+  float: left;
+  font-family: 'Kaushan Script', cursive;
+  color: white;
+  font-size: 50px;
+  margin-left: 25px;
 }
 
 nav.scrolled {
@@ -130,6 +138,11 @@ nav a:hover {
     100% {left:120px; top:5%; font-size: 40px;}
   }
 
+  nav spam {
+    font-size: 40px;
+    margin-left: 20px;
+  }
+
 }
 
 @media(max-width: 425px) {
@@ -160,6 +173,10 @@ nav a:hover {
     100% {left:90px; top:5%; font-size: 30px;}
   }
 
+  nav spam {
+    font-size: 30px;
+    margin-left: 15px;
+  }
 }
 
  

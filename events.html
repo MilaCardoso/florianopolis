@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="styles/header.css">
     <link rel="stylesheet" href="styles/events.css">
     <link rel="stylesheet" href="styles/footer.css">
-
+    <script src="js/events.js"></script>
 </head>
 <body>
     <div class="header-even">
@@ -26,7 +26,46 @@
             </ul>
         </nav>
     </div>
-
+    <main>
+        <table class="table-fill">
+            <thead>
+                <tr>
+                    <th class="text-left">Date</th>
+                    <th class="text-left">Event</th>
+                </tr>
+            </thead>
+            <tbody class="table-hover">
+                <tr>
+                    <td class="text-left">07/Feb</td>
+                    <td class="text-left">Samba school rehearsal</td>
+                </tr>
+                <tr>
+                    <td class="text-left">08/Feb</td>
+                    <td class="text-left">Michel Teló Concert</td>
+                </tr>
+                <tr>
+                    <td class="text-left">22/Feb</td>
+                    <td class="text-left">Carnival</td>
+                </tr>
+                <tr>
+                    <td class="text-left">23/Feb</td>
+                    <td class="text-left">Molejo Concert</td>
+                </tr>
+                <tr>
+                    <td class="text-left">08/Mar</td>
+                    <td class="text-left">International woman's day event</td>
+                </tr>
+                <tr>
+                    <td class="text-left">14/Mar</td>
+                    <td class="text-left">Bob Marley tribute</td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="special-events">
+            <button onclick="getEvents()">Show special events</button>
+            <pre id="events"></pre>
+        </div>
+    </main>
     
     <div class="footer">
         <footer>
@@ -34,6 +73,5 @@
             <script src="js/canvas.js"></script>
         </footer>
     </div>
-
 </body >
 </html>
