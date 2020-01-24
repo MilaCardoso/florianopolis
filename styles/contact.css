@@ -1,0 +1,9 @@
+.header-cont {
+    position: relative;
+    height: 400px;
+    color: #fff;
+    text-align: center;
+    background-image: url("../images/header/bridge.jpg");
+    background-repeat: no-repeat, repeat;
+    background-size: cover;
+  }

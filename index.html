@@ -3,75 +3,55 @@
 <head>
     <meta charset="utf-8" />
     <title>Homepage</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://fonts.googleapis.com/css?family=Kaushan+Script&display=swap" rel="stylesheet">
-    <link rel="jssheet" href="js/slider.css">
-    <link rel="stylesheet" href="styles/header.css">
 
-    <script>
-        function plusSlides(n) {
-            showSlides(slideIndex += n);
-        }
-        function currentSlide(n) {
-            showSlides(slideIndex = n);
-        }
-        function showSlides(n) {
-            var i;
-            var slides = document.getElementsByClassName("mySlides");
-            var dots = document.getElementsByClassName("dot");
-            if (n > slides.length) {slideIndex = 1;}
-            if (n < 1) {slideIndex = slides.length;}
-            for (i = 0; i < slides.length; i++) {
-                slides[i].style.display = "none";
-            }
-            for (i = 0; i < dots.length; i++) {
-                dots[i].className = dots[i].className.replace(" active", "");
-            }
-            slides[slideIndex-1].style.display = "block";
-            dots[slideIndex-1].className += " active";}
-    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="https://fonts.googleapis.com/css?family=Kaushan+Script&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/footer.css">
+
+    
 
 </head>
 <body>
     <div class="header">
         <nav>
-            <h1>Florianópolis</h1>
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">History & Gallery</a></li>
-                <li><a href="#">Attractions & Guide</a></li>
-                <li><a href="#">Contacts</a></li>
-                <li><a href="#">Events</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="history.html">History & Gallery</a></li>
+                <li><a href="attractions.html">Attractions & Guide</a></li>
+                <li><a href="contact.html">Contacts</a></li>
+                <li><a href="events.html">Events</a></li>
             </ul>
         </nav>
     </div>
-
     <div class="slideshow-container">
+        <spam class="main-title">Florianópolis</spam>
         <div class="mySlides">
             <img src="images/slider/bridge.jpg" alt="bridge">
         </div>
         <div class="mySlides">
-            <img src="images/slider/bridge2.jpg" alt="groomer">
+            <img src="images/slider/campecheIsland.jpg" alt="campeche">
         </div>
         <div class="mySlides">
-            <img src="images/backgrounds/diet.jpeg" alt="diet">
+            <img src="images/slider/sunset.jpg" alt="sunset">
         </div>
         <div class="mySlides">
-            <img src="images/backgrounds/product.jpg" alt="product">
+            <img src="images/slider/stoAntonio.jpg" alt="stoAntonio">
         </div>
         <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
         <a class="next" onclick="plusSlides(1)">&#10095;</a>
     </div>
-    <div class="dot-container">
-        <span class="dot" onclick="currentSlide(1)"></span>
-        <span class="dot" onclick="currentSlide(2)"></span>
-        <span class="dot" onclick="currentSlide(3)"></span>
-        <span class="dot" onclick="currentSlide(4)"></span>
+
+    <script src="js/slider.js"></script>
+
+    <div class="footer">
+        <footer>
+            <canvas id="myCanvas" height="100"></canvas>
+            <script src="js/canvas.js"></script>
+        </footer>
     </div>
 
-    <script>
-     var slideIndex = 1;
-     showSlides(slideIndex);</script>
-
-</body>
+</body >
 </html>

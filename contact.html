@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Contact</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="https://fonts.googleapis.com/css?family=Kaushan+Script&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/contact.css">
+    <link rel="stylesheet" href="styles/footer.css">
+
+    <script src="js/date-validation.js"></script>
+</head>
+<body>
+    <div class="header-cont">
+        <nav>
+            <spam>Florianópolis</spam>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="history.html">History & Gallery</a></li>
+              <li><a href="attractions.html">Attractions & Guide</a></li>
+              <li><a href="contact.html">Contacts</a></li>
+              <li><a href="events.html">Events</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <form action="/signup" method="post">
+        <p>
+          <label>First name</label><br>
+          <input type="text" name="first_name" placeholder="Your first name" autofocus required>
+
+        </p>
+        <p>
+          <label>Last name</label><br>
+          <input type="text" name="last_name" placeholder="Your last name" required> 
+        </p>
+        <p>
+          <label>Title</label><br>
+          <label>
+            <input type="radio" name="title" value="mr">
+            Mr
+          </label>
+          <label>
+            <input type="radio" name="title" value="mrs">
+            Mrs
+          </label>
+          <label>
+            <input type="radio" name="title" value="miss">
+            Miss
+          </label>
+        </p>
+        <p>
+          <label>Email</label><br>
+          <input type="email" name="email" placeholder="Your email" required>
+        </p>
+        <p>
+          <label>Phone number</label><br>
+          <input type="tel" name="phone"placeholder="Your phone number">
+        </p>
+        <p>
+          <label>What country are you from?</label><br>
+          <select>
+            <option>Brazil</option>
+            <option>Croatia</option>
+            <option>Ireland</option>
+            <option>Pakistan</option>
+            <option>Romania</option>
+            <option>South Africa</option>
+          </select>
+        </p>
+        <p>
+          <label>Why do you contact us?</label><br>
+          <select>
+            <option>Looking for accommodation</option>
+            <option>Book a city tour by bus</option>
+            <option>trilha lagoinha do leste</option>
+            <option>passeio de barco ilha do campeche</option>
+            <option>dunas da joaquina</option>
+          </select>
+        </p>
+        <p>
+          <label>Start Date</label><br>
+          <input type="date" name="startDate" onchange="TDate(this)" >
+        </p>
+        <p>
+          <label>End Date</label><br>
+          <input type="date" name="endDate">
+        </p>
+        <p>
+          <label>Quantity of people (between 1 and 20)</label><br>
+          <input type="number" name="quantity" min="1" max="20">
+        </p>
+        <p>
+        <label>Tour Price</label><br>
+          <input type="range" name="vol" value="0" min="0" max="100"
+          oninput="display.value=value" onchange="display.value=value">
+          <input type="text" id="display" value="0" readonly>	
+        </p>
+        <p>
+          <label for="message">Message:</label>
+          <textarea name="message" id="message" placeholder="Message*" required=""></textarea>
+        </p>
+        <label>
+          <input type="checkbox" value="emails">
+          I agree to receive promotional emails
+        </label>
+      </p>
+      <p>
+        <input type="submit" value="Submit">
+      </p>
+
+      </form>
+      
+      <div class="footer">
+        <footer>
+            <canvas id="myCanvas" height="100"></canvas>
+            <script src="js/canvas.js"></script>
+        </footer>
+    </div>
+      
+</body >
+</html>

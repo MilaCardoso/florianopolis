@@ -1,0 +1,9 @@
+.header-attr {
+    position: relative;
+    height: 400px;
+    color: #fff;
+    text-align: center;
+    background-image: url("../images/header/campecheIsland.jpg");
+    background-repeat: no-repeat, repeat;
+    background-size: cover;
+  }
