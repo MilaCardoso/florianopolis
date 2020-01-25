@@ -8,10 +8,6 @@ html {
   scroll-behavior: smooth;
 }
 
-header {
-  display: flex;
-}
-
 .mySlides img {
   width: 100%;
   height: auto;
@@ -19,18 +15,19 @@ header {
   margin-bottom: -4px;
 }
 
-nav {
-  position: fixed;
+.header {
+  position: absolute;
   width: 100%;
-  z-index: 10;
+  z-index: 1;
 }
 
-nav spam {
+.header spam {
   float: left;
   font-family: 'Kaushan Script', cursive;
   color: white;
   font-size: 50px;
   margin-left: 25px;
+  text-shadow: 0px 1px 5px rgba(0, 0, 0, 0.8);
 }
 
 nav.scrolled {
@@ -50,15 +47,40 @@ nav li {
 }
 
 nav a {
+  font-family: helvetica, arial, sans-serif;
   font-size: 0.9em;
   color: white;
   text-decoration: none;
   margin: 5px 0 0 20px;
   display: block;
+  text-shadow: 0px 1px 5px rgba(0, 0, 0, 0.8);
 }
 
-nav a:hover {
-  color: gray;
+nav a:hover, nav .active {
+  color: #ff992f;
+}
+
+.menu-icon {
+  display: none;
+  float: right;
+  margin: 15px 20px;
+}
+
+.closebtn {
+  display:none;
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.menu-icon div {
+  width: 35px;
+  height: 5px;
+  background-color: #ff992f;
+  border-radius: 10px;
+  margin: 6px 0;
 }
 
 /* Slides */
@@ -114,14 +136,59 @@ nav a:hover {
   100% {left:150px; top:5%; font-size: 50px;}
 }
 
+@media(max-width: 817px) {
+  nav a {
+    font-size: 10px;
+  }
+}
+
 @media(max-width: 700px) {
   .main-title {
       font-size: 50px;
   }
 
-  nav ul {
-    display: none;
+  nav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 12;
+    top: 0;
+    right: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
   }
+
+  .backdrop {
+      display: none;
+      background: rgba(0, 0, 0, 0.5);
+      height: 100vh;
+      width: 100vw;
+      z-index: 11;
+      position: fixed;
+      top: 0;
+      transition: opacity 0.2s linear;
+  }
+
+  nav a {
+    font-size: 1.5rem;
+    
+  }
+
+  nav li {
+    margin-bottom: 20PX;
+  }
+
+  nav ul {
+    text-align: left;
+    transition: 0.3s;
+  }
+  
+  .menu-icon, .closebtn {
+    display: block;
+  }
+
 
   .prev, .next {
     font-size: 30px;
@@ -138,7 +205,7 @@ nav a:hover {
     100% {left:120px; top:5%; font-size: 40px;}
   }
 
-  nav spam {
+  .header spam {
     font-size: 40px;
     margin-left: 20px;
   }
@@ -148,14 +215,6 @@ nav a:hover {
 @media(max-width: 425px) {
   .main-title {
       font-size: 20px;
-  }
-
-  nav ul {
-    display: none;
-  }
-
-  .mySlides img {
-    /* transform: translate(-41%); */
   }
 
   .prev, .next {
@@ -173,7 +232,7 @@ nav a:hover {
     100% {left:90px; top:5%; font-size: 30px;}
   }
 
-  nav spam {
+  .header spam {
     font-size: 30px;
     margin-left: 15px;
   }

@@ -13,20 +13,28 @@
     <link rel="stylesheet" href="styles/footer.css">
 
     <script src="js/date-validation.js"></script>
+    <script src="js/header.js"></script>
 </head>
 <body>
-    <div class="header-cont">
-        <nav>
-            <spam>Florianópolis</spam>
-            <ul>
-              <li><a href="index.html">Home</a></li>
-              <li><a href="history.html">History & Gallery</a></li>
+    
+    <div class="header header-cont">
+      <div class="backdrop" onclick="closeNav()"></div>
+      <spam>Florianópolis</spam>
+      <nav id="menu">
+          <ul>
+              <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+              <li><a href="index.html" >Home</a></li>
+              <li><a href="history.html" >History & Gallery</a></li>
               <li><a href="attractions.html">Attractions & Guide</a></li>
-              <li><a href="contact.html">Contacts</a></li>
-              <li><a href="events.html">Events</a></li>
-            </ul>
-        </nav>
-    </div>
+              <li><a href="contact.html" class="active">Contacts</a></li>
+              <li><a href="events.html" >Events</a></li>
+          </ul>
+      </nav>
+      <div class="menu-icon" onclick="openNav();">
+          <div></div>
+          <div></div>
+      </div>
+  </div>
 
     <h1>Come to the Island of the Magic</h1>
 
@@ -52,7 +60,7 @@
             <div class="col-25">
               <label for="title">Title</label>
             </div>
-            <div class="col-75">
+            <div class="col-75 small-field">
               <input type="radio" id="title" name="title" value="mr">Mr 
               <input type="radio" id="title" name="title" value="mrs">Mrs 
               <input type="radio" id="title" name="title" value="miss">Miss 
@@ -107,22 +115,20 @@
               <label for="startDate">Start Date</label>
             </div>
             <div class="col-75">
-              <input type="date" id="startDate" name="startDate" onchange="TDate(this)">
+              <input type="date" id="startDate" name="startDate" onchange="validStardDate(this)">
             </div>
           </div>
-          <!-- Consegue digitar dia menor que o atual e menor que a data start -->
           <div class="row">
             <div class="col-25">
               <label for="endDate">End Date</label>
             </div>
             <div class="col-75">
-              <input type="date" id="endDate" name="endDate">
+              <input type="date" id="endDate" name="endDate" onchange="validEndDate(this)">
             </div>
           </div>
-          <!-- Consegue digitar na mao valor maior que 20 -->
           <div class="row">
             <div class="col-25">
-              <label for="quantity">Quantity of people (between 1 and 20)</label>
+              <label for="quantity">Quantity of people</label>
             </div>
             <div class="col-75">
               <input type="number" id="quantity" name="quantity" min="1" max="20">
@@ -135,9 +141,7 @@
             <div class="col-75">
               <input type="range" name="vol" value="0" min="0" max="100"
                 oninput="display.value=value" onchange="display.value=value">
-              <input type="text" id="display" value="0" width="50px" readonly>	
-              <!-- <input type="text" id="display" value="0" readonly="" style="
-              width: 50px;"> -->
+              <input type="text" id="display" value="0" readonly>	
             </div>
           </div>
           <div class="row">

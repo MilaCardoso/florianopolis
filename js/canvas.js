@@ -6,9 +6,9 @@ function handleResize() {
     var ctx = c.getContext("2d");
     
     // Create gradient
-    var grd = ctx.createLinearGradient(0,0,200,0);
-    grd.addColorStop(0,"#D5F3FE");   
-    grd.addColorStop(1,"#3C99DC");
+    var grd = ctx.createLinearGradient(0,0,window.innerWidth/2,window.innerWidth/2);
+    grd.addColorStop(0,"#00e1ff");   
+    grd.addColorStop(1,"#ff992f");
     
     // Fill with gradient
     ctx.fillStyle = grd;

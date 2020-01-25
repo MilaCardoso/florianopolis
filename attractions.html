@@ -11,20 +11,27 @@
     <link rel="stylesheet" href="styles/header.css">
     <link rel="stylesheet" href="styles/attractions.css">
     <link rel="stylesheet" href="styles/footer.css">
+    <script src="js/header.js"></script>
 
 </head>
 <body>
-    <div class="header-attr">
-        <nav>
-            <spam>Florianópolis</spam>
+    <div class="header header-attr">
+        <div class="backdrop" onclick="closeNav()"></div>
+        <spam>Florianópolis</spam>
+        <nav id="menu">
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="history.html">History & Gallery</a></li>
-                <li><a href="attractions.html">Attractions & Guide</a></li>
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <li><a href="index.html" >Home</a></li>
+                <li><a href="history.html" >History & Gallery</a></li>
+                <li><a href="attractions.html" class="active">Attractions & Guide</a></li>
                 <li><a href="contact.html">Contacts</a></li>
-                <li><a href="events.html">Events</a></li>
+                <li><a href="events.html" >Events</a></li>
             </ul>
         </nav>
+        <div class="menu-icon" onclick="openNav();">
+            <div></div>
+            <div></div>
+        </div>
     </div>
     
     <h1>Enjoy Floripa</h1>
@@ -34,7 +41,7 @@
         <div class="attraction">
             <div class="first-block">
                 <div class="image">
-                    <img src="images/attractions/lagoinha-do-leste.jpg" alt="Beach">
+                    <img src="assets/attractions/lagoinha-do-leste.jpg" alt="Beach">
                 </div>
                 
                 <div class="text">
@@ -57,13 +64,13 @@
                 </div>
 
                 <div class="image">
-                    <img src="images/attractions/sandboard.jpg" alt="Sandboard">
+                    <img src="assets/attractions/sandboard.jpg" alt="Sandboard">
                 </div>
             </div>
 
             <div class="first-block">
                 <div class="image">
-                    <img src="images/attractions/mercado.jpg" alt="Mercado">
+                    <img src="assets/attractions/mercado.jpg" alt="Mercado">
                 </div>
                 
                 <div class="text">
@@ -84,7 +91,7 @@
                 </div>
 
                 <div class="image">
-                    <img src="images/attractions/kit-surf.jpg" alt="kit-surf">
+                    <img src="assets/attractions/kit-surf.jpg" alt="kit-surf">
                 </div>
             </div>
 

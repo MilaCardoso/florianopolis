@@ -3,13 +3,12 @@
     height: 400px;
     color: #fff;
     text-align: center;
-    background-image: url("../images/header/campecheIsland.jpg");
+    background-image: url("../assets/header/campecheIsland.jpg");
     background-repeat: no-repeat, repeat;
     background-size: cover;
   }
 
 h1 {
-  width: 1000px;
   text-align: center;
   margin: auto;
   color: orange;
@@ -50,4 +49,19 @@ h1 {
 
 .main-section > .attraction > .first-block h2 {
   color: rgb(0, 225, 255);
+}
+
+@media(max-width: 700px) {
+  
+  h1 {
+    font-size: 50px;
+  }
+}
+
+@media(max-width: 425px) {
+
+  h1 {
+    font-size: 30px;
+  }
+
 }

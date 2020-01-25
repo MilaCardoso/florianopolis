@@ -3,13 +3,12 @@
   height: 400px;
   color: #fff;
   text-align: center;
-  background-image: url("../images/header/bridge.jpg");
+  background-image: url("../assets/header/bridge.jpg");
   background-repeat: no-repeat, repeat;
   background-size: cover;
 }
 
 h1 {
-  width: 1000px;
   text-align: center;
   margin: auto;
   color: orange;
@@ -23,7 +22,7 @@ h1 {
   box-sizing: border-box;
 }
 
-input[type=text], select, textarea {
+input[type=text],input[type=email],input[type=tel],input[type=date],input[type=number], select, textarea {
   width: 100%;
   padding: 12px;
   border: 1px solid #ccc;
@@ -44,6 +43,7 @@ input[type=submit] {
   border-radius: 4px;
   cursor: pointer;
   float: right;
+  margin: 0 auto;
 }
 
 input[type=submit]:hover {
@@ -51,10 +51,12 @@ input[type=submit]:hover {
 }
 
 .container {
-  border-radius: 5px; */
+  border-radius: 5px; 
   background-color: #f2f2f2;
-  padding: 20px;
-  /* background-image: url("../images/slider/campeche.jpg");
+  padding: 20px 40px;
+  max-width: 800px;
+  margin: 30px auto;
+  /* background-image: url("../assets/slider/campeche.jpg");
   background-repeat: no-repeat, repeat;
   background-size: cover;
   opacity: 0.5; */
@@ -70,6 +72,10 @@ input[type=submit]:hover {
   float: left;
   width: 75%;
   margin-top: 6px;
+}
+
+.small-field {
+  margin-top: 15px;
 }
 
 .end {
@@ -89,9 +95,27 @@ input[type=submit]:hover {
   width: 50px;
 }
 
-@media screen and (max-width: 600px) {
+@media(max-width: 700px) {
+
   .col-25, .col-75, input[type=submit] {
     width: 100%;
     margin-top: 0;
   }
+
+  h1 {
+    font-size: 50px;
+  }
+}
+
+@media(max-width: 425px) {
+
+  .col-25, .col-75, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+
+  h1 {
+    font-size: 30px;
+  }
+
 }

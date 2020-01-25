@@ -12,7 +12,7 @@ table {
     height: 400px;
     color: #fff;
     text-align: center;
-    background-image: url("../images/header/sunset.jpg");
+    background-image: url("../assets/header/sunset.jpg");
     background-repeat: no-repeat, repeat;
     background-size: cover;
   }

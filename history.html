@@ -6,25 +6,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link href="https://fonts.googleapis.com/css?family=Kaushan+Script&display=swap" rel="stylesheet">
-
+    
+    <script src="js/header.js"></script>
     <link rel="stylesheet" href="styles/header.css">
     <link rel="stylesheet" href="styles/history.css">
     <link rel="stylesheet" href="styles/footer.css">
-        
     <link rel="stylesheet" href="styles/jquery.lightbox.css">
 </head>
 <body>
-    <div class="header-hist">
-        <nav>
-            <spam>Florianópolis</spam>
+    
+    <div class="header header-hist">
+        <div class="backdrop" onclick="closeNav()"></div>
+        <spam>Florianópolis</spam>
+        <nav id="menu">
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="history.html">History & Gallery</a></li>
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <li><a href="index.html" >Home</a></li>
+                <li><a href="history.html" class="active">History & Gallery</a></li>
                 <li><a href="attractions.html">Attractions & Guide</a></li>
                 <li><a href="contact.html">Contacts</a></li>
                 <li><a href="events.html">Events</a></li>
             </ul>
         </nav>
+        <div class="menu-icon" onclick="openNav();">
+            <div></div>
+            <div></div>
+        </div>
     </div>
     <h1>Some title here</h1>
 
@@ -38,18 +45,18 @@
     <h1>Some title here</h1>
     <div class="container">
         <ul class="gallery">
-            <li><a href="images/gallery/1.jpg"><img src="images/gallery/thumbnails/1.jpg" alt="Image"></a></li>
-            <li><a href="images/gallery/2.jpg"><img src="images/gallery/thumbnails/2.jpg" alt="Image"></a></li>
-            <li><a href="images/gallery/3.jpg"><img src="images/gallery/thumbnails/3.jpg" alt="Image"></a></li>
-            <li><a href="images/gallery/4.jpg"><img src="images/gallery/thumbnails/4.jpg" alt="Image"></a></li>
-            <li><a href="images/gallery/5.jpg"><img src="images/gallery/thumbnails/5.jpg" alt="Image"></a></li>
-            <li><a href="images/gallery/6.jpg"><img src="images/gallery/thumbnails/6.jpg" alt="Image"></a></li>
-            <li><a href="images/gallery/7.jpg"><img src="images/gallery/thumbnails/7.jpg" alt="Image"></a></li>
-            <li><a href="images/gallery/8.jpg"><img src="images/gallery/thumbnails/8.jpg" alt="Image"></a></li>
-            <li><a href="images/gallery/9.jpg"><img src="images/gallery/thumbnails/9.jpg" alt="Image"></a></li>
-            <li><a href="images/gallery/10.jpg"><img src="images/gallery/thumbnails/10.jpg" alt="Image"></a></li>
-            <li><a href="images/gallery/11.jpg"><img src="images/gallery/thumbnails/11.jpg" alt="Image"></a></li>
-            <li><a href="images/gallery/12.jpg"><img src="images/gallery/thumbnails/12.jpg" alt="Image"></a></li>
+            <li><a href="assets/gallery/1.jpg"><img src="assets/gallery/thumbnails/1.jpg" alt="Image"></a></li>
+            <li><a href="assets/gallery/2.jpg"><img src="assets/gallery/thumbnails/2.jpg" alt="Image"></a></li>
+            <li><a href="assets/gallery/3.jpg"><img src="assets/gallery/thumbnails/3.jpg" alt="Image"></a></li>
+            <li><a href="assets/gallery/4.jpg"><img src="assets/gallery/thumbnails/4.jpg" alt="Image"></a></li>
+            <li><a href="assets/gallery/5.jpg"><img src="assets/gallery/thumbnails/5.jpg" alt="Image"></a></li>
+            <li><a href="assets/gallery/6.jpg"><img src="assets/gallery/thumbnails/6.jpg" alt="Image"></a></li>
+            <li><a href="assets/gallery/7.jpg"><img src="assets/gallery/thumbnails/7.jpg" alt="Image"></a></li>
+            <li><a href="assets/gallery/8.jpg"><img src="assets/gallery/thumbnails/8.jpg" alt="Image"></a></li>
+            <li><a href="assets/gallery/9.jpg"><img src="assets/gallery/thumbnails/9.jpg" alt="Image"></a></li>
+            <li><a href="assets/gallery/10.jpg"><img src="assets/gallery/thumbnails/10.jpg" alt="Image"></a></li>
+            <li><a href="assets/gallery/11.jpg"><img src="assets/gallery/thumbnails/11.jpg" alt="Image"></a></li>
+            <li><a href="assets/gallery/12.jpg"><img src="assets/gallery/thumbnails/12.jpg" alt="Image"></a></li>
         </ul>
     </div>
     <div class="footer">
@@ -59,7 +66,7 @@
         </footer>
     </div>
     
-    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="js/jquery.lightbox.js"></script>
     <script>
         // Initiate Lightbox

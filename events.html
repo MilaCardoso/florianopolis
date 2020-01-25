@@ -12,19 +12,26 @@
     <link rel="stylesheet" href="styles/events.css">
     <link rel="stylesheet" href="styles/footer.css">
     <script src="js/events.js"></script>
+    <script src="js/header.js"></script>
 </head>
 <body>
-    <div class="header-even">
-        <nav>
-            <spam>Florianópolis</spam>
+    <div class="header header-even">
+        <div class="backdrop" onclick="closeNav()"></div>
+        <spam>Florianópolis</spam>
+        <nav id="menu">
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="history.html">History & Gallery</a></li>
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <li><a href="index.html" >Home</a></li>
+                <li><a href="history.html" >History & Gallery</a></li>
                 <li><a href="attractions.html">Attractions & Guide</a></li>
                 <li><a href="contact.html">Contacts</a></li>
-                <li><a href="events.html">Events</a></li>
+                <li><a href="events.html" class="active">Events</a></li>
             </ul>
         </nav>
+        <div class="menu-icon" onclick="openNav();">
+            <div></div>
+            <div></div>
+        </div>
     </div>
     <main>
         <table class="table-fill">
