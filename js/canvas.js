@@ -32,6 +32,4 @@ function handleResize() {
     ctx.fillText("Make your stay a wonderful stay at Floripa", canvas.width/2, canvas.height/2);
 }
 
-setTimeout(function() {document.documentElement.scrollTop = 0;}, 1);
-
 handleResize();

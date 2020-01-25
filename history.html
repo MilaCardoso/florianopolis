@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="utf-8" />
     <title>History</title>
@@ -10,7 +10,8 @@
     <link rel="stylesheet" href="styles/header.css">
     <link rel="stylesheet" href="styles/history.css">
     <link rel="stylesheet" href="styles/footer.css">
-
+        
+    <link rel="stylesheet" href="styles/jquery.lightbox.css">
 </head>
 <body>
     <div class="header-hist">
@@ -25,7 +26,6 @@
             </ul>
         </nav>
     </div>
-
     <h1>Some title here</h1>
 
     <div class="video">
@@ -34,56 +34,38 @@
             Your browser does not support the video tag.
         </video>
     </div>
-
+    
     <h1>Some title here</h1>
-
-    <div class= "row">
-	
-        <a class= "lightbox" href= "#photo01" >
-            <figure class= "photo01"><p>Photo 01</p></figure>
-        </a>
-    
-        <div class= "lightbox-target" id="photo01">
-            
-            <div class= "container">
-                <img src= "../images/gallery/1.jpg">
-                <a class= "lightbox-close" href= "#">X</a>
-            </div>
-    
-        </div>
-    
-        <a class= "lightbox" href= "#photo02">
-            <figure class= "photo02"><p>Photo 02</p></figure>
-        </a>
-    
-        <div class= "lightbox-target" id="photo02">
-            <div class= "container">
-                <img src= "../images/gallery/2.jpg">
-                <a class= "lightbox-close" href= "#">X</a>
-            </div>
-    
-        </div>
-    
-        <a class= "lightbox" href="#photo03">
-            <figure class= "photo03"><p>Photo 03</p></figure>
-        </a>
-    
-        <div class= "lightbox-target" id="photo03">
-            <div class= "container">
-                <img src= "../images/gallery/3.jpg">
-                <a class= "lightbox-close" href= "#">X</a>
-            </div>
-        </div>
-    
+    <div class="container">
+        <ul class="gallery">
+            <li><a href="images/gallery/1.jpg"><img src="images/gallery/thumbnails/1.jpg" alt="Image"></a></li>
+            <li><a href="images/gallery/2.jpg"><img src="images/gallery/thumbnails/2.jpg" alt="Image"></a></li>
+            <li><a href="images/gallery/3.jpg"><img src="images/gallery/thumbnails/3.jpg" alt="Image"></a></li>
+            <li><a href="images/gallery/4.jpg"><img src="images/gallery/thumbnails/4.jpg" alt="Image"></a></li>
+            <li><a href="images/gallery/5.jpg"><img src="images/gallery/thumbnails/5.jpg" alt="Image"></a></li>
+            <li><a href="images/gallery/6.jpg"><img src="images/gallery/thumbnails/6.jpg" alt="Image"></a></li>
+            <li><a href="images/gallery/7.jpg"><img src="images/gallery/thumbnails/7.jpg" alt="Image"></a></li>
+            <li><a href="images/gallery/8.jpg"><img src="images/gallery/thumbnails/8.jpg" alt="Image"></a></li>
+            <li><a href="images/gallery/9.jpg"><img src="images/gallery/thumbnails/9.jpg" alt="Image"></a></li>
+            <li><a href="images/gallery/10.jpg"><img src="images/gallery/thumbnails/10.jpg" alt="Image"></a></li>
+            <li><a href="images/gallery/11.jpg"><img src="images/gallery/thumbnails/11.jpg" alt="Image"></a></li>
+            <li><a href="images/gallery/12.jpg"><img src="images/gallery/thumbnails/12.jpg" alt="Image"></a></li>
+        </ul>
     </div>
-
-  
     <div class="footer">
         <footer>
             <canvas id="myCanvas" height="100"></canvas>
             <script src="js/canvas.js"></script>
         </footer>
     </div>
-
+    
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/jquery.lightbox.js"></script>
+    <script>
+        // Initiate Lightbox
+        $(function() {
+            $('.gallery a').lightbox(); 
+        });
+    </script>
 </body >
 </html>

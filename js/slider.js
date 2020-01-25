@@ -36,3 +36,5 @@ function showSlides_auto(n) {
 
    setTimeout(showSlides_auto, 3000); 
 }
+
+setTimeout(function() {document.documentElement.scrollTop = 0;}, 1);
