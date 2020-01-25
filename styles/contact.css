@@ -1,9 +1,97 @@
 .header-cont {
-    position: relative;
-    height: 400px;
-    color: #fff;
-    text-align: center;
-    background-image: url("../images/header/bridge.jpg");
-    background-repeat: no-repeat, repeat;
-    background-size: cover;
+  position: relative;
+  height: 400px;
+  color: #fff;
+  text-align: center;
+  background-image: url("../images/header/bridge.jpg");
+  background-repeat: no-repeat, repeat;
+  background-size: cover;
+}
+
+h1 {
+  width: 1000px;
+  text-align: center;
+  margin: auto;
+  color: orange;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  font-family: 'Kaushan Script', cursive;
+  font-size: 90px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+input[type=submit] {
+  background-color:#00c4cc;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+
+input[type=submit]:hover {
+  background-color: #419da0;
+}
+
+.container {
+  border-radius: 5px; */
+  background-color: #f2f2f2;
+  padding: 20px;
+  /* background-image: url("../images/slider/campeche.jpg");
+  background-repeat: no-repeat, repeat;
+  background-size: cover;
+  opacity: 0.5; */
+}
+
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+.end {
+  float: right;
+  width: 75%;
+  margin-top: 40px;
+  margin-bottom: 30px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+#display {
+  width: 50px;
+}
+
+@media screen and (max-width: 600px) {
+  .col-25, .col-75, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
   }
+}
