@@ -8,16 +8,6 @@
     background-size: cover;
 }
 
-h1 {
-    text-align: center;
-    margin: auto;
-    color: orange;
-    margin-top: 10px;
-    margin-bottom: 20px;
-    font-family: 'Kaushan Script', cursive;
-    font-size: 90px;
-}
-
 .container {
     max-width: 832px;
     margin: 0 auto;

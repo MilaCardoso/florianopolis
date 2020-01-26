@@ -125,6 +125,27 @@ nav a:hover, nav .active {
   color: white;
 }
 
+h1 {
+    text-align: center;
+    margin: auto;
+    color: orange;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-family: 'Kaushan Script', cursive;
+    font-size: 90px;
+}
+
+.footer canvas {
+    margin: 0;
+    margin-bottom: -6px;
+}
+
+.main-content {
+    max-width: 600px;
+    margin: 0 auto;
+    font-family: Arial;
+}
+
 @keyframes revealing {
   0%   {opacity:0; font-size: 100px;}
   50% {opacity:1; font-size: 200px;}
@@ -143,6 +164,10 @@ nav a:hover, nav .active {
 }
 
 @media(max-width: 700px) {
+  h1 {
+      font-size: 50px;
+  }
+
   .main-title {
       font-size: 50px;
   }
@@ -210,9 +235,16 @@ nav a:hover, nav .active {
     margin-left: 20px;
   }
 
+  .main-content {
+    margin: 0 20px;
+  }
 }
 
 @media(max-width: 425px) {
+    h1 {
+        font-size: 30px;
+    }
+
   .main-title {
       font-size: 20px;
   }
@@ -236,6 +268,10 @@ nav a:hover, nav .active {
     font-size: 30px;
     margin-left: 15px;
   }
+  .main-content {
+    margin: 0 10px;
+  }
 }
 
- 
+
+

@@ -8,16 +8,6 @@
   background-size: cover;
 }
 
-h1 {
-  text-align: center;
-  margin: auto;
-  color: orange;
-  margin-top: 10px;
-  margin-bottom: 20px;
-  font-family: 'Kaushan Script', cursive;
-  font-size: 90px;
-}
-
 * {
   box-sizing: border-box;
 }
@@ -102,9 +92,6 @@ input[type=submit]:hover {
     margin-top: 0;
   }
 
-  h1 {
-    font-size: 50px;
-  }
 }
 
 @media(max-width: 425px) {
@@ -112,10 +99,6 @@ input[type=submit]:hover {
   .col-25, .col-75, input[type=submit] {
     width: 100%;
     margin-top: 0;
-  }
-
-  h1 {
-    font-size: 30px;
   }
 
 }

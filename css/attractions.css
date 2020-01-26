@@ -8,16 +8,6 @@
     background-size: cover;
   }
 
-h1 {
-  text-align: center;
-  margin: auto;
-  color: orange;
-  margin-top: 10px;
-  margin-bottom: 20px;
-  font-family: 'Kaushan Script', cursive;
-  font-size: 90px;
-}
-
 .main-section {
   display: flex;
   justify-content: center;
@@ -53,16 +43,10 @@ h1 {
 
 @media(max-width: 700px) {
   
-  h1 {
-    font-size: 50px;
-  }
 }
 
 @media(max-width: 425px) {
 
-  h1 {
-    font-size: 30px;
-  }
   .main-section > .attraction {
     grid-template-columns: 1fr;
   }
