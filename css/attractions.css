@@ -63,5 +63,8 @@ h1 {
   h1 {
     font-size: 30px;
   }
+  .main-section > .attraction {
+    grid-template-columns: 1fr;
+  }
 
 }
